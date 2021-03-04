@@ -197,7 +197,7 @@ class RosVideoWriter():
 
         if not self.opt_prefix:
             # create the output in the same folder and name as the bag file minu '.bag'
-            self.opt_prefix = bagfile[:-4]
+            self.opt_prefix = filename[:-4]
             
         #Go through the bag file
         bag = rosbag.Bag(filename)
